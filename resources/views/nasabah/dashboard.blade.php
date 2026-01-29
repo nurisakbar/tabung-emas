@@ -35,8 +35,43 @@
                     <div class="d-grid gap-2">
                         <a href="{{ route('nasabah.gold-price') }}" class="btn btn-outline-primary">Lihat Harga Emas</a>
                         <a href="{{ route('nasabah.gold-saving') }}" class="btn btn-outline-success">Lihat Tabungan</a>
+                        <a href="{{ route('nasabah.installments.index') }}" class="btn btn-outline-warning">Cicil Emas</a>
+                        <a href="{{ route('nasabah.pledges.index') }}" class="btn btn-outline-info">Gadai Emas</a>
                         <a href="{{ route('nasabah.profile.edit') }}" class="btn btn-outline-secondary">Edit Profile</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+            <div class="card border-warning h-100">
+                <div class="card-body text-center">
+                    <div class="mb-2" style="font-size: 2.5rem;">📅</div>
+                    <h6 class="fw-bold">Cicil Emas</h6>
+                    <p class="text-muted small mb-2">Beli emas secara cicilan</p>
+                    <a href="{{ route('nasabah.installments.index') }}" class="btn btn-sm btn-warning">Lihat Paket</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card border-info h-100">
+                <div class="card-body text-center">
+                    <div class="mb-2" style="font-size: 2.5rem;">🏦</div>
+                    <h6 class="fw-bold">Gadai Emas</h6>
+                    <p class="text-muted small mb-2">Gadaikan emas untuk pinjaman</p>
+                    <a href="{{ route('nasabah.pledges.index') }}" class="btn btn-sm btn-info">Pelajari Lebih</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card border-primary h-100">
+                <div class="card-body text-center">
+                    <div class="mb-2" style="font-size: 2.5rem;">📈</div>
+                    <h6 class="fw-bold">Harga Emas</h6>
+                    <p class="text-muted small mb-2">Lihat pergerakan harga</p>
+                    <a href="{{ route('nasabah.gold-price') }}" class="btn btn-sm btn-primary">Lihat Harga</a>
                 </div>
             </div>
         </div>

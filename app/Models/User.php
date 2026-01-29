@@ -81,4 +81,20 @@ class User extends Authenticatable
     {
         return $this->hasMany(Transaction::class);
     }
+
+    /**
+     * Get installment plans for this user
+     */
+    public function installmentPlans()
+    {
+        return $this->hasMany(GoldInstallmentPlan::class);
+    }
+
+    /**
+     * Get gold pledges for this user
+     */
+    public function goldPledges()
+    {
+        return $this->hasMany(GoldPledge::class);
+    }
 }

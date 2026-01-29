@@ -52,6 +52,18 @@
                                 <span class="nav-text">Transaksi</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link professional-nav-link {{ request()->routeIs('admin.installments.*') ? 'active' : '' }}" href="{{ route('admin.installments.index') }}">
+                                <span class="nav-icon">📅</span>
+                                <span class="nav-text">Cicil Emas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link professional-nav-link {{ request()->routeIs('admin.pledges.*') ? 'active' : '' }}" href="{{ route('admin.pledges.index') }}">
+                                <span class="nav-icon">🏦</span>
+                                <span class="nav-text">Gadai Emas</span>
+                            </a>
+                        </li>
                     @else
                         <li class="nav-item">
                             <a class="nav-link professional-nav-link {{ request()->routeIs('nasabah.dashboard') ? 'active' : '' }}" href="{{ route('nasabah.dashboard') }}">
@@ -63,6 +75,18 @@
                             <a class="nav-link professional-nav-link {{ request()->routeIs('nasabah.gold-saving') ? 'active' : '' }}" href="{{ route('nasabah.gold-saving') }}">
                                 <span class="nav-icon">💎</span>
                                 <span class="nav-text">Tabungan</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link professional-nav-link {{ request()->routeIs('nasabah.installments.*') ? 'active' : '' }}" href="{{ route('nasabah.installments.index') }}">
+                                <span class="nav-icon">📅</span>
+                                <span class="nav-text">Cicil Emas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link professional-nav-link {{ request()->routeIs('nasabah.pledges.*') ? 'active' : '' }}" href="{{ route('nasabah.pledges.index') }}">
+                                <span class="nav-icon">🏦</span>
+                                <span class="nav-text">Gadai Emas</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -108,6 +132,18 @@
                                 <a class="dropdown-item professional-dropdown-item" href="{{ route('nasabah.gold-saving') }}">
                                     <span class="dropdown-icon">💎</span>
                                     <span>Tabunganku</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item professional-dropdown-item" href="{{ route('nasabah.installments.index') }}">
+                                    <span class="dropdown-icon">📅</span>
+                                    <span>Cicil Emas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item professional-dropdown-item" href="{{ route('nasabah.pledges.index') }}">
+                                    <span class="dropdown-icon">🏦</span>
+                                    <span>Gadai Emas</span>
                                 </a>
                             </li>
                             <li><hr class="dropdown-divider"></li>
